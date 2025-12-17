@@ -44,9 +44,11 @@ import student_data
 # print(student_data.students)
 students = student_data.students
 print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
+print(students[2]['Combo,Name'])
+print(students[2]['Email'][0])
+print(students[2]['Email'][1])
+print(students[2]['HR'])
+print(students['CPS ID'])
 
 # What is being counted?
 
@@ -68,11 +70,19 @@ print(students[0]['Email'][1])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# for student in students:
+#     print(student['Combo,Name'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
+#     print("_"*25)
+#     print(students[2]['HR'])
+#     print(students['CPS ID'])
+
+# student.update({'lunchstatus': 'reduced'})
+# print(student['Lunchstatus'])
+
+# if student[GL] >= 10:
+#     print('offcampus Lunch')
 
 # What does the loop variable student represent on each pass?
 
@@ -102,7 +112,22 @@ for student in students:
 
 # What would happen if two students had the same name?
 
+# we are asking the user to input their name
+# then we are checking if the name is in the data
+# if the name is in the data we are printing the name and "this works"
+name = input("what is you name?")
+for student in students:
+    if name == student['Combo,Name']:
+        print(student['Combo,Name'])
+        print("this works")
+print(student['CPS ID'])
+# What is the goal of this search?
 
+# What happens if the name is not found?
+
+# Why is the comparison happening inside the loop?
+
+# What would happen if two students had the same name?
 
 
 
